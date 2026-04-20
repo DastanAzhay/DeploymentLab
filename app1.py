@@ -4,11 +4,15 @@ import numpy as np
 
 st.title("Hello, Streamlit!")
 st.write("This is a simple Streamlit app.")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87c07cd51465460dcb7d30ced581be52469bc7d5
 name = st.text_input("Enter your name:")
 if name:
     st.write(f"Hello, {name}!")
 
+<<<<<<< HEAD
 st.divider()
 
 st.subheader("Image Analyzer")
@@ -40,3 +44,9 @@ if uploaded_file:
     c3.metric("Blue", avg_b)
 
     st.color_picker("Dominant avg color", f"#{avg_r:02x}{avg_g:02x}{avg_b:02x}", disabled=True)
+=======
+img = Image.open("flag.png")
+with st.container(horizontal_alignment="center"):
+    st.image(img, caption="Flag Image", use_column_width=True) 
+
+>>>>>>> 87c07cd51465460dcb7d30ced581be52469bc7d5
