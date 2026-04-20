@@ -27,7 +27,7 @@ if uploaded_file:
     col2.metric("Height", f"{img.height} px")
     col3.metric("Format", img.format or uploaded_file.type.split("/")[1].upper())
 
-    st.subheader("🎨 Color Stats (RGB Averages)")
+    st.subheader("Color Stats (RGB Averages)")
     img_array = np.array(img.convert("RGB"))
     avg_r = int(img_array[:, :, 0].mean())
     avg_g = int(img_array[:, :, 1].mean())
